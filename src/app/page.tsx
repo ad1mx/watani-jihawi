@@ -59,7 +59,7 @@ const HomePage = () => {
       dir="rtl"
       className="flex flex-col text-center items-center justify-center h-screen bg-emerald-950 text-emerald-50"
     >
-      <h1 className="text-2xl lg:text-3xl font-bold">
+      <h1 className="text-2xl lg:text-3xl font-bold px-2">
         الوقت المتبقي للإمتحان الوطني والجهوي بالمغرب 2025!
       </h1>
       <div className="flex flex-col lg:flex-row gap-4 mt-12">
