@@ -39,7 +39,13 @@ const TimerCard = ({ name }: { name: "watani" | "jihawi" }) => {
   }, [date]);
 
   return (
-    <div className="flex flex-col items-center justify-center w-[250px] sm:w-[300px] md:w-[350px] py-6 bg-emerald-900 rounded-xl shadow-xl">
+    <div
+      className={`flex ring-1 flex-col items-center justify-center w-[250px] sm:w-[300px] md:w-[350px] py-6 rounded-xl shadow-xl ${
+        name === "watani"
+          ? "bg-teal-800 ring-teal-700 ring-2"
+          : "bg-emerald-800 ring-emerald-700 ring-2"
+      } text-emerald-50`}
+    >
       <h2 className="text-2xl font-bold">
         {name === "watani" ? "الإمتحان الوطني" : "الإمتحان الجهوي"}
       </h2>
