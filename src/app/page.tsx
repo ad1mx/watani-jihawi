@@ -39,7 +39,7 @@ const TimerCard = ({ name }: { name: "watani" | "jihawi" }) => {
   }, [date]);
 
   return (
-    <div className="flex flex-col items-center justify-center w-[350px] py-6 bg-emerald-900 rounded-xl shadow-xl">
+    <div className="flex flex-col items-center justify-center w-[250px] sm:w-[300px] md:w-[350px] py-6 bg-emerald-900 rounded-xl shadow-xl">
       <h2 className="text-2xl font-bold">
         {name === "watani" ? "الإمتحان الوطني" : "الإمتحان الجهوي"}
       </h2>
@@ -57,12 +57,12 @@ const HomePage = () => {
   return (
     <main
       dir="rtl"
-      className="flex flex-col items-center justify-center h-screen bg-emerald-950 text-emerald-50"
+      className="flex flex-col text-center items-center justify-center h-screen bg-emerald-950 text-emerald-50"
     >
-      <h1 className="text-3xl font-bold">
-        !الوقت المتبقي للإمتحان الوطني والجهوي
+      <h1 className="text-2xl lg:text-3xl font-bold">
+        الوقت المتبقي للإمتحان الوطني والجهوي بالمغرب 2025!
       </h1>
-      <div className="flex gap-4 mt-12">
+      <div className="flex flex-col lg:flex-row gap-4 mt-12">
         <TimerCard name="jihawi" />
         <TimerCard name="watani" />
       </div>
